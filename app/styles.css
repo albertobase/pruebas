@@ -12,7 +12,7 @@
 }
 .inputRadio.icon-radio:before{
 	font-size: 20px;
-	color: blue;
+	color: red;
 }
 .inputRadio__input{
 	position: absolute;
