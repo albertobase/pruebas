@@ -1,0 +1,43 @@
+.inputRadio{
+	position: relative;
+	padding-left: 26px;
+	vertical-align: top;
+	font-weight: normal;
+	.icon-radio{
+		position: absolute;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		&:before{
+			font-size: 20px;
+			color: blue;
+		}
+	}
+}
+.inputRadio__input{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	&[type="radio"]{
+		margin: -1px;
+	}
+	&:checked{
+		+ .icon-radio{
+			&:before{
+				content: "\6e";
+			}
+		}
+	}
+	&:focus{
+		+ .icon-radio{
+			&:before{
+				outline: #66c7ff solid 2px;
+			}
+		}
+	}
+}
